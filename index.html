@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // ดึง parameter ทั้งหมดจาก URL เดิม (เช่น ?equip=EL-RW-001)
+        const queryParams = window.location.search;
+        
+        // URL ปลายทาง
+        const targetBaseUrl = "https://ops.sermsukplc.com/one_digital/app21";
+        
+        // รวม URL ปลายทางเข้ากับ พารามิเตอร์เดิม
+        const finalUrl = targetBaseUrl + queryParams;
+        
+        // เปลี่ยนหน้าทันที
+        window.location.replace(finalUrl);
+    </script>
+</head>
+<body>
+    <p>กำลังนำท่านไปยังระบบใหม่...</p>
+</body>
+</html>
